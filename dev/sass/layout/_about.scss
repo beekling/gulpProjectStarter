@@ -1,0 +1,16 @@
+.about {
+  background-color: $main-color;
+  color: $offwhite;
+  &__heading {
+  }
+  &__text {
+    font-size: 1.25em;
+    line-height: 1.25;
+    letter-spacing: 1.5px;
+  }
+  &__img {
+    overflow: hidden;
+    max-height: 300px;
+    float: right;
+  }
+}

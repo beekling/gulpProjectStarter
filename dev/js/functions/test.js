@@ -1,0 +1,7 @@
+$(function () {
+    // code here ...
+});
+
+
+
+

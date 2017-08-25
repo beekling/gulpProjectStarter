@@ -1,0 +1,10 @@
+section {
+  background-color: $section-background;
+  @include tablet {
+    padding: $pad;
+    padding: 50px 0px;
+  }
+  @include desktop {
+    padding: $extra-pad;
+  }
+}

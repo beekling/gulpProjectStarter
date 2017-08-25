@@ -1,0 +1,25 @@
+.hero {
+  background: $hero-background;
+  background-image: url('../img/screen.jpg');
+  background-repeat: no-repeat center center fixed;
+  background-size: cover;
+  &__cta1 {
+    margin-top: 20px;
+  }
+  &__tagline {
+    color: $offwhite;
+    text-shadow: $main-color 0.02em 0.02em 0.2em;
+    font-size: 4em;
+    width: 50%;
+    @include tablet {
+      font-size: 2em;
+      width: 100%;
+    }
+
+    &--small {
+      font-size: 2em;
+      color: $offwhite; // text-shadow: $offwhite 0.04em 0.05em 0.5em;
+      padding: $small-pad;
+    }
+  }
+}

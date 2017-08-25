@@ -1,0 +1,92 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// .box { @include border-radius(10px); }
+
+
+$tablet-width: 768px;
+$desktop-width: 769px;
+// $desktop-width: 1024px;
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+// @include tablet {
+//     font-size: 18px;
+//   }
+
+
+@mixin retina {
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+
+
+
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+.block {
+  color: red;
+  
+  @include e('item') {
+    margin: 2px;
+    
+    @include m('mod') {
+      padding: 10px;
+
+    }
+  }
+
+}
+
+.block2 {
+  color: red;
+  
+  @include e('steve') {
+    margin: 2px;
+    
+    @include m('john') {
+      padding: 10px;
+
+    }
+  }
+  
+}

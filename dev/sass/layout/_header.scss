@@ -1,0 +1,58 @@
+header {
+    z-index: 999;
+    background-color: rgba(204, 204, 204, 1);
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    li {
+        width: 100%;
+        text-align: center;
+    }
+    .menu {
+        &__logo {
+            margin-right: $extra-pad;
+            @include desktop {
+                text-align: left;
+            }
+            img {
+                width: 20px;
+                position: relative;
+                top: -2px;
+            }
+        }
+        &__name {
+            padding-left: $small-pad;
+        }
+        &__icons {
+            @include desktop {
+                display: none;
+            }
+            z-index: 999999999;
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 2em;
+        }
+        &__link {
+
+
+            @include tablet {
+                display: none;
+            }
+            width: 100%;
+            transition: .4s ease-in-out;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+                background-color: $section-background;
+                padding: 10px;
+            }
+        }
+    }
+    .active {
+        background-color: $section-background;
+        padding: 10px;
+    }
+}

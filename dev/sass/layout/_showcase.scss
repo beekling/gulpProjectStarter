@@ -1,0 +1,21 @@
+.showcases {
+  // &:nth-child(odd) {
+  //   background-color: $main-color;
+  //   color: $offwhite;
+  // }
+  // &:nth-child(even) {
+  // }
+    background-color: $offwhite;
+    color: $main-color;
+    border-bottom: 1px solid $section-background;
+
+  .showcase {
+    &__info {
+      width: 300px;
+    }
+  }
+  img {
+    padding: $pad;
+  }
+}
+

@@ -1,0 +1,38 @@
+.cta {
+  transition: all 0.3s;
+  transition: background-color 200ms;
+  -moz-transition: all 0.3s;
+  -moz-transition: background-color 200ms;
+  -webkit-transition: all 0.3s;
+  -webkit-transition: background-color 200ms;
+
+  @include border-radius(0px);
+  
+  background-color: $main-color;
+  border: $offwhite 1px solid;
+  color: $offwhite;
+  
+  text-decoration: none;
+  outline: none;
+  padding: 15px 20px;
+  margin: 20px 0;
+  white-space: normal;
+  cursor: pointer;
+  z-index: 999;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.cta:hover {
+  background: $offwhite;
+  border: $main-color 1px solid;
+  color: $main-color;
+}
+
+@media (max-width: 767px) {
+  .cta {
+  }
+}
+

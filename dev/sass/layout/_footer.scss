@@ -1,0 +1,12 @@
+footer {
+  padding: $small-pad;
+  color: $offwhite;
+  img {
+  }
+  .footer {
+    &__logo {
+      margin: 10px 0;
+      height: 50px;
+    }
+  }
+}
