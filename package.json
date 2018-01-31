@@ -2,7 +2,7 @@
   "name": "starter",
   "version": "1.0.0",
   "description": "template",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +13,7 @@
   "author": "Eric Lingbeek",
   "license": "ISC",
   "homepage": "",
-  "devDependencies": {
+  "dependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -25,5 +25,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^3.0.0",
     "gulp-zip": "^4.0.0"
-  }
+
+  },
+  "devDependencies": {}
 }
